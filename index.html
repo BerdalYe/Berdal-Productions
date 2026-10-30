@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Berdal Productions — Web projects & small builds</title>
+<meta name="description" content="Berdal Productions: web projects and small builds — by Berdal, for himself and for others.">
+<meta name="theme-color" content="#0a0a0a">
+
+<link rel="canonical" href="https://berdalproductions.netlify.app/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://berdalproductions.netlify.app/">
+<meta property="og:title" content="Berdal Productions — Web projects & small builds">
+<meta property="og:description" content="Web projects and small builds — by Berdal, for himself and for others.">
+<meta property="og:image" content="https://berdalproductions.netlify.app/icons/og-banner.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Berdal Productions — Web projects & small builds">
+<meta property="og:site_name" content="Berdal Productions">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="nb_NO">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Berdal Productions — Web projects & small builds">
+<meta name="twitter:description" content="Web projects and small builds — by Berdal, for himself and for others.">
+<meta name="twitter:image" content="https://berdalproductions.netlify.app/icons/og-banner.webp">
+
+<!-- Icons -->
+<link rel="icon" href="icons/favicon.ico" sizes="any">
+<link rel="icon" href="icons/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="icons/favicon-16.png" type="image/png" sizes="16x16">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+
+<!-- Fonts & styles -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>
+  .section{opacity:1!important;transform:none!important}
+  .project-card,.service{opacity:1!important;transform:none!important}
+  .lang-toggle{display:none!important}
+</style></noscript>
+</head>
+<body>
+
+<a href="#projects" class="skip-link">Skip to content</a>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <img src="icons/bp_logo_sm.webp" alt="Berdal Productions" width="36" height="36">
+      <span>Berdal Productions</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
+      <li><a href="#services" data-i18n="nav.services">Services</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-current">EN</span>
+        <span class="lang-divider">/</span>
+        <span class="lang-other">NO</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#projects" data-i18n="nav.projects">Projects</a>
+    <a href="#about" data-i18n="nav.about">About</a>
+    <a href="#services" data-i18n="nav.services">Services</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <img src="icons/bp_logo_sm.webp" alt="" class="hero-logo" width="140" height="140" fetchpriority="high">
+    <h1>Berdal Productions</h1>
+    <p class="tagline" data-i18n="hero.tagline">Web projects and small builds.</p>
+    <p class="subtitle" data-i18n="hero.subtitle">Sites and tools — for my own ideas and for other people.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary" data-i18n="hero.ctaPrimary">See Projects</a>
+      <a href="#contact" class="btn btn-ghost" data-i18n="hero.ctaSecondary">Get In Touch</a>
+    </div>
+  </div>
+  <a href="#projects" class="scroll-cue" aria-label="Scroll"><i class="fas fa-chevron-down"></i></a>
+</header>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="projects.eyebrow">Selected Work</span>
+      <h2 data-i18n="projects.title">Projects</h2>
+      <p data-i18n="projects.intro">What's out there, and what's on the way.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <a class="project-visual project-visual-arbeidsdager" href="https://play.google.com/store/apps/details?id=no.arbeidsdager.app" target="_blank" rel="noopener" aria-label="Arbeidsdager on Google Play">
+          <img src="icons/projectimages/arbeidsdager.webp" alt="Arbeidsdager app icon" class="project-app-icon" width="512" height="512" loading="lazy" decoding="async">
+          <span class="project-visual-label" data-i18n="projects.arbeidsdager.label">on google play</span>
+        </a>
+        <div class="project-body">
+          <span class="project-tag" data-i18n="projects.arbeidsdager.tag">Mobile App · Android</span>
+          <h3>Arbeidsdager</h3>
+          <p data-i18n="projects.arbeidsdager.desc">Log workdays, plan shifts and chat with your team — quickly and easily. A mobile app for tracking work hours and coordinating teams.</p>
+          <ul class="project-stack">
+            <li>React</li><li>Capacitor</li><li>Supabase</li><li>Tailwind</li>
+          </ul>
+          <a class="project-link" href="https://play.google.com/store/apps/details?id=no.arbeidsdager.app" target="_blank" rel="noopener">
+            <span data-i18n="projects.arbeidsdager.cta">Get it on Google Play</span> <i class="fab fa-google-play"></i>
+          </a>
+          <span class="project-link is-static project-note-2">
+            <i class="fab fa-apple"></i> <span data-i18n="projects.arbeidsdager.note">Coming to the App Store soon</span>
+          </span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <a class="project-visual project-visual-marie has-shot" href="https://mariesperler.netlify.app" target="_blank" rel="noopener" aria-label="Open Marie's Perler">
+          <img src="icons/projectimages/mariesperler.webp" alt="Marie's Perler homepage screenshot" width="1200" height="692" loading="lazy" decoding="async">
+          <span class="project-visual-label">mariesperler.netlify.app</span>
+        </a>
+        <div class="project-body">
+          <span class="project-tag" data-i18n="projects.marie.tag">E-commerce · Brand</span>
+          <h3>Marie's Perler</h3>
+          <p data-i18n="projects.marie.desc">A friendly storefront for handmade beaded bracelets and hobby pieces — product catalog, gallery and a simple checkout flow.</p>
+          <ul class="project-stack">
+            <li>HTML/CSS</li><li>JavaScript</li><li>Responsive</li><li>Cart</li>
+          </ul>
+          <a class="project-link" href="https://mariesperler.netlify.app" target="_blank" rel="noopener">
+            <span data-i18n="projects.visit">Visit site</span> <i class="fas fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-visual project-visual-blink">
+          <img src="icons/projectimages/blink.webp" alt="Blink app icon" class="project-app-icon" width="512" height="512" loading="lazy" decoding="async">
+          <span class="project-visual-label" data-i18n="projects.blink.label">coming soon</span>
+        </div>
+        <div class="project-body">
+          <span class="project-tag" data-i18n="projects.blink.tag">Mobile App · Android</span>
+          <h3>Blink</h3>
+          <p data-i18n="projects.blink.desc">A training log for pistol shooting. Log each series, pick discipline, firearm and calibre, and follow your progress — every series drawn on a target so you can see the hit pattern.</p>
+          <ul class="project-stack">
+            <li>React</li><li>Capacitor</li><li>Tailwind</li><li>SVG</li>
+          </ul>
+          <span class="project-link is-static">
+            <i class="fas fa-hourglass-half"></i> <span data-i18n="projects.blink.note">Coming soon to Google Play</span>
+          </span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-visual project-visual-scanmat">
+          <img src="icons/projectimages/scanmat.webp" alt="ScanMat app icon" class="project-app-icon" width="512" height="512" loading="lazy" decoding="async">
+          <span class="project-visual-label" data-i18n="projects.scanmat.label">coming soon</span>
+        </div>
+        <div class="project-body">
+          <span class="project-tag" data-i18n="projects.scanmat.tag">Mobile App · Android</span>
+          <h3>ScanMat</h3>
+          <p data-i18n="projects.scanmat.desc">Photograph the food you already have — in the fridge, on the counter, in the cupboard — and get recipe suggestions from what the app recognises. Recognition runs on the device, so no photos leave your phone.</p>
+          <ul class="project-stack">
+            <li>React</li><li>TensorFlow.js</li><li>Capacitor</li><li>Tailwind</li>
+          </ul>
+          <span class="project-link is-static">
+            <i class="fas fa-hourglass-half"></i> <span data-i18n="projects.scanmat.note">Coming soon to Google Play</span>
+          </span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-visual project-visual-game">
+          <i class="fas fa-gamepad project-visual-bg-icon"></i>
+          <img src="icons/projectimages/openworld_avatar.webp" alt="Open-world game character portrait" class="project-avatar" width="173" height="152" loading="lazy" decoding="async">
+          <span class="project-visual-label" data-i18n="projects.game.label">work in progress</span>
+        </div>
+        <div class="project-body">
+          <span class="project-tag" data-i18n="projects.game.tag">Personal · Game</span>
+          <h3 data-i18n="projects.game.title">Low-poly city simulator</h3>
+          <p data-i18n="projects.game.desc">A side experiment in 3D open-world game dev — characters, vehicles, and a small explorable city. A hobby project, not a service I offer.</p>
+          <ul class="project-stack">
+            <li>Godot 4.3</li><li>GDScript</li><li>3D</li>
+          </ul>
+          <span class="project-link is-static">
+            <i class="fas fa-flask"></i> <span data-i18n="projects.game.note">Hobby project — no public release</span>
+          </span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <a class="project-visual project-visual-voxelia" href="https://voxelia.onrender.com" target="_blank" rel="noopener" aria-label="Play Voxelia">
+          <i class="fas fa-cube project-visual-bg-icon"></i>
+          <div class="project-glyph"><i class="fas fa-cubes"></i></div>
+          <span class="project-visual-label">voxelia.onrender.com</span>
+        </a>
+        <div class="project-body">
+          <span class="project-tag" data-i18n="projects.voxelia.tag">Personal · Game</span>
+          <h3>Voxelia</h3>
+          <p data-i18n="projects.voxelia.desc">A voxel sandbox that runs in the browser — survival and creative modes, procedurally generated biomes, crafting and tool tiers, and online multiplayer over a zero-dependency Node server.</p>
+          <ul class="project-stack">
+            <li>Three.js</li><li>JavaScript</li><li>Node</li><li>WebSockets</li>
+          </ul>
+          <a class="project-link" href="https://voxelia.onrender.com" target="_blank" rel="noopener">
+            <span data-i18n="projects.voxelia.cta">Play in browser</span> <i class="fas fa-arrow-up-right-from-square"></i>
+          </a>
+          <span class="project-link is-static project-note-2">
+            <i class="fas fa-moon"></i> <span data-i18n="projects.voxelia.note">Free hosting — the server may take a moment to wake up</span>
+          </span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <a class="project-visual project-visual-cars" href="https://the-history-of-cars.vercel.app" target="_blank" rel="noopener" aria-label="Open The History of Cars">
+          <i class="fas fa-road project-visual-bg-icon"></i>
+          <div class="project-glyph"><i class="fas fa-car-side"></i></div>
+          <span class="project-visual-label">the-history-of-cars.vercel.app</span>
+        </a>
+        <div class="project-body">
+          <span class="project-tag" data-i18n="projects.cars.tag">Personal · Web</span>
+          <h3 data-i18n="projects.cars.title">The History of Cars</h3>
+          <p data-i18n="projects.cars.desc">A cinematic journey through the automobile, from the 1886 Benz Patent-Motorwagen to electric and self-driving cars — a scroll-driven era story, twelve themed brand garages, and a searchable gallery with side-by-side comparison.</p>
+          <ul class="project-stack">
+            <li>JavaScript</li><li>ES Modules</li><li>SVG</li><li>CSS</li>
+          </ul>
+          <a class="project-link" href="https://the-history-of-cars.vercel.app" target="_blank" rel="noopener">
+            <span data-i18n="projects.visit">Visit site</span> <i class="fas fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card project-card-soon">
+        <div class="project-visual project-visual-next">
+          <div class="project-mark"><i class="fas fa-plus"></i></div>
+          <span class="project-visual-label" data-i18n="projects.next.label">your project here</span>
+        </div>
+        <div class="project-body">
+          <span class="project-tag" data-i18n="projects.next.tag">Open Slot</span>
+          <h3 data-i18n="projects.next.title">Next project</h3>
+          <p data-i18n="projects.next.desc">Got an idea you want built? The next slot in the portfolio is open.</p>
+          <a class="project-link" href="#contact">
+            <span data-i18n="projects.next.cta">Start a project</span> <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section section-alt">
+  <div class="container about-grid">
+    <div class="about-text">
+      <span class="eyebrow" data-i18n="about.eyebrow">About</span>
+      <h2 data-i18n="about.title">Just me, building things.</h2>
+      <p class="lead" data-i18n="about.lead">Berdal Productions is the home for the web stuff I make — both my own ideas and projects for other people.</p>
+      <p data-i18n="about.body1">I take projects from idea to launch: design, build, deploy, and the bits in between. Nothing fancy, nothing oversold — just sites and tools that work, look right, and stay live.</p>
+      <p data-i18n="about.body2">If something here resonates, the inbox is open.</p>
+    </div>
+    <div class="about-visual">
+      <div class="about-card">
+        <img src="icons/bp_logo_sm.webp" alt="Berdal Productions" width="120" height="120" loading="lazy">
+        <p class="quote" data-i18n="about.quote">"Build it. Ship it. Keep it alive."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="services.eyebrow">What I Do</span>
+      <h2 data-i18n="services.title">Services</h2>
+      <p data-i18n="services.intro">If it lives in a browser, it's probably on the table.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service">
+        <i class="fas fa-code"></i>
+        <h3 data-i18n="services.web.title">Websites & Web Apps</h3>
+        <p data-i18n="services.web.desc">Marketing sites, small web apps, and tools — fast, accessible, mobile-first.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-pen-nib"></i>
+        <h3 data-i18n="services.brand.title">UI & Brand</h3>
+        <p data-i18n="services.brand.desc">Clean interfaces and small-brand identity — logos, colors, type, the whole feel.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-cart-shopping"></i>
+        <h3 data-i18n="services.shop.title">Small E-commerce</h3>
+        <p data-i18n="services.shop.desc">Simple storefronts and order flows for makers, hobbyists, and side businesses.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-rocket"></i>
+        <h3 data-i18n="services.deploy.title">Deploy & Maintain</h3>
+        <p data-i18n="services.deploy.desc">Hosting setup, custom domains, SEO basics, and the unglamorous upkeep that keeps things alive.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section section-alt">
+  <div class="container contact-wrap">
+    <span class="eyebrow" data-i18n="contact.eyebrow">Contact</span>
+    <h2 data-i18n="contact.title">Let's build something.</h2>
+    <p data-i18n="contact.intro">Got a project, an idea, or a question? Drop a message — replies usually come within a day.</p>
+
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form" id="contactForm" novalidate>
+      <input type="hidden" name="form-name" value="contact">
+      <div class="hp" aria-hidden="true">
+        <label>Leave empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+      </div>
+      <div class="field-row">
+        <label class="field">
+          <span data-i18n="contact.form.name">Name</span>
+          <input type="text" name="name" required autocomplete="name" maxlength="120">
+        </label>
+        <label class="field">
+          <span data-i18n="contact.form.email">Email</span>
+          <input type="email" name="email" required autocomplete="email" maxlength="200" inputmode="email">
+        </label>
+      </div>
+      <label class="field">
+        <span data-i18n="contact.form.message">Message</span>
+        <textarea name="message" rows="5" required maxlength="5000"></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary btn-lg" id="contactSubmit">
+        <span data-i18n="contact.form.submit">Send message</span> <i class="fas fa-paper-plane"></i>
+      </button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+
+    <p class="contact-or" data-i18n="contact.or">or email directly</p>
+    <a href="mailto:berdalproductions@gmail.com" class="contact-email">
+      <i class="fas fa-envelope"></i> berdalproductions@gmail.com
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="icons/bp_logo_sm.webp" alt="" width="28" height="28" loading="lazy">
+      <span>Berdal Productions</span>
+    </div>
+    <p>&copy; <span id="year"></span> Berdal Productions</p>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "ae6aa0554d6a4a14849f666a1d8a086c"}'></script>
+<!-- End Cloudflare Web Analytics -->
+
+<script src="js/main.js" defer></script>
+
+</body>
+</html>
