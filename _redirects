@@ -1,0 +1,6 @@
+# Arbeidsdager legal pages moved into their own folder.
+/privacy.html  /arbeidsdager/privacy.html  301
+/privacy       /arbeidsdager/privacy       301
+/terms.html    /arbeidsdager/terms.html    301
+/terms         /arbeidsdager/terms         301
+/favicon.ico   /icons/favicon.ico          200
