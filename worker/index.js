@@ -1,10 +1,39 @@
-// Contact form handler (Cloudflare Pages Function).
-// Needs: send_email binding named EMAIL, plus plain variables CONTACT_TO (your verified
-// inbox) and CONTACT_FROM (an address on your onboarded domain).
+// Runs only for "/" and "/api/*" (see run_worker_first in wrangler.jsonc).
 const json = (body, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json' } });
 
-export async function onRequestPost({ request, env }) {
+export default {
+  async fetch(request, env) {
+    const url = new URL(request.url);
+    if (url.pathname === '/api/contact') return contact(request, env);
+    if (url.pathname === '/') return home(request, env);
+    return env.ASSETS.fetch(request);
+  },
+};
+
+// Norwegian browsers get /no/ on the English homepage, unless they chose English
+// (bp_en cookie, set by the language link).
+async function home(request, env) {
+  if (request.method === 'GET' || request.method === 'HEAD') {
+    const cookie = request.headers.get('Cookie') || '';
+    const primary = (request.headers.get('Accept-Language') || '').split(',')[0].trim().toLowerCase();
+    if (/^(nb|nn|no)(-|$)/.test(primary) && !/(?:^|;\s*)bp_en=/.test(cookie)) {
+      return new Response(null, {
+        status: 302,
+        headers: { Location: '/no/', Vary: 'Accept-Language, Cookie', 'Cache-Control': 'private, no-store' },
+      });
+    }
+  }
+  const res = await env.ASSETS.fetch(request);
+  const out = new Response(res.body, res);
+  out.headers.append('Vary', 'Accept-Language, Cookie');
+  return out;
+}
+
+// Contact form: needs the EMAIL send_email binding, CONTACT_TO and CONTACT_FROM.
+async function contact(request, env) {
+  if (request.method !== 'POST') return json({ ok: false }, 405);
+
   const origin = request.headers.get('Origin');
   if (origin && new URL(origin).host !== new URL(request.url).host) return json({ ok: false }, 403);
 
@@ -35,5 +64,3 @@ export async function onRequestPost({ request, env }) {
   }
   return json({ ok: true });
 }
-
-export const onRequest = () => json({ ok: false }, 405);

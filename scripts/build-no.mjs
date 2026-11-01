@@ -1,5 +1,5 @@
 // Generates no/index.html (Norwegian) from index.html (English) + i18n/no.json.
-// Run: node scripts/build-no.mjs   (Cloudflare Pages runs it on every deploy)
+// Run: node scripts/build-no.mjs   (Cloudflare runs it on every deploy)
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 
 const ORIGIN = 'https://berdalproductions.berdal.dev';

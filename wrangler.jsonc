@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "berdalproductionswebsite",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page",
+    // The worker only runs for these paths; everything else is served straight from assets.
+    "run_worker_first": ["/", "/api/*"]
+  },
+  "send_email": [{ "name": "EMAIL" }],
+  "vars": {
+    "CONTACT_TO": "berdalproductions@gmail.com",
+    "CONTACT_FROM": "noreply@berdal.dev"
+  }
+}

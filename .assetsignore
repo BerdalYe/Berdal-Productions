@@ -1,0 +1,9 @@
+worker
+scripts
+i18n
+wrangler.jsonc
+.assetsignore
+.hintrc
+.gitignore
+node_modules
+.git
